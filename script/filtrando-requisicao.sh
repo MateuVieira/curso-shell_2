@@ -2,7 +2,9 @@
 
 cd ..
 
-case $1 in
+local letra_maiuscula=$(echo $1 | awk '{ print toupper($1)}')
+
+case $letra_maiuscula in
 	GET)
 	cat apache.log | grep GET
 	;;
