@@ -2,7 +2,7 @@
 
 cd ..
 
-local letra_maiuscula=$(echo $1 | awk '{ print toupper($1)}')
+letra_maiuscula=$(echo $1 | awk '{ print toupper($1)}')
 
 case $letra_maiuscula in
 	GET)
